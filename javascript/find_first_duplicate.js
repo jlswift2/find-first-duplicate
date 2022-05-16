@@ -1,6 +1,14 @@
 function findFirstDuplicate(arr) {
+  // This one will NOT work. It finds the duplicate, but not the first one to occur! ie [1,2,2,1] => 1
+  //   for(let i = 0; i < arr.length; i++){
+    //     if(arr.lastIndexOf(arr[i]) !== i){
+      //        return arr[i];
+      //     };
+      //   };
+      //  return -1;
+      // }
   duplicate = new Set()
-
+      
   for (let i = 0; i < arr.length; i++) {
     if (duplicate.has(arr[i])) {
       return arr[i];
